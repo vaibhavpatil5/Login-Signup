@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	
+
+	<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<title>Mini-Project</title>
+</head>
+<body>
+
+	
+	<div class="container">
+        	
+			
+			
+            <p id="lt" class="tabs" onclick="loginTabFun()">Log In</p>
+            <p id="rt" class="tabs" onclick="regTabFun()">Sign Up</p>
+
+            <div class="clear"></div>
+      
+        <div class="box">
+            <div id="login" class="subbox">
+
+                <h3>Log In <i class='bx bx-log-in-circle'></i></h3>
+                <input id="se" type="email" value="" placeholder="Email" />
+                
+                <input id="sp" type="password" value="" placeholder="Password" />
+
+                 <div class="form-element">
+			        <input type="checkbox" onclick="showPass()">
+			        <label>Show Password</label>
+			      </div>
+
+                <input type="submit" onclick="login()" value="Submit"/>
+                <div class="para">
+                <p>Don't have an account?  <span><strong>Sign up</strong></span><i class='bx bxl-telegram'></i></p>
+                </div>
+            </div>
+
+
+            <div id="register" class="subbox">
+
+                <h3>Sign Up <i class='bx bx-log-out-circle'></i></h3>
+                <input id="re" type="email" value="" placeholder="Email"/>
+
+                <div class="tooltip">
+				<i class="bi bi-info-circle-fill"></i>
+				 	 <span class="tooltiptext">
+				 	 	<ul>
+				 	 		<li>Must be at least 4 to 15 <br>char long.</li>
+				 	 		<li>Must contain a digits or Special Char</li>
+				 	 		<li>Must contain a lowercase letter.</li>
+				 	 		<li>Must contain an uppercase letter.</li>
+				 	 	</ul>
+				 	 </span>
+				</div> 
+
+
+                <input id="rp" type="password" value="" placeholder="Password"/>
+                <input id="rrp" type="password" value="" placeholder="Re write Password"/>
+                <input type="submit" onclick="register()" value="Submit"/>
+
+            </div >
+           
+        </div>
+      
+    </div>
+    				
+   
+</body>
+<script src="main.js"></script>
+</html>
+

@@ -1,0 +1,152 @@
+      
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,500;0,600;1,700&display=swap');
+
+          *{
+             margin: 0;
+             padding: 0;
+        }
+        body {
+            background:#ddd;
+            font-family: 'Mali', cursive;
+            display: grid;
+            height: 100%;
+            scroll-behavior: none;
+            
+            
+        }
+
+        .container{
+            width: 300px;
+            margin:0 auto;          /*container will be center*/
+            margin-top: 180px;
+
+        }
+
+        
+
+         .form-element input[type="checkbox"] {
+              width:50px;
+              position: absolute;
+              margin:6px 0px;
+              margin-left:-5px;
+            }
+
+            label{
+                text-align: center;
+                margin-left: 35px;
+            }
+
+        .tabs{
+            display: table-cell;
+            width: 30%;
+            color: #555;
+            padding: 10px;
+            float: left;
+            text-align: center;
+            border: 0px solid #ddd;
+            border-bottom: 0;
+            border-radius: 5px 5px 0 0 ;
+            font-size: 1.3em;
+            cursor: pointer;
+            position: relative;
+            
+        }
+        #lt {
+                background-color:#f5f5f5;
+            }
+
+        .box{
+            width: 100%;
+            height: 300px;
+            background-color:#f5f5f5;
+            box-shadow:5px 5px 10px 5px #ccc;
+            border: 2px solid #f5f5f5;
+              border-radius:0 5px 5px;
+        }
+
+         .clear {
+            clear: both;
+        }
+
+       input{
+            display: block;
+            width: 250px;
+            margin: 10px 13px;
+            padding: 10px;
+            font-size: 1.2em;
+            color: black;
+            text-decoration: none;
+
+        }
+
+
+        input[placeholder="Email"], 
+        input[placeholder="Password"], 
+        input[placeholder="Re write Password"] {
+             font-family: 'Mali', cursive;
+              color: #555;
+        }
+
+
+        input[type="submit"] {
+            width: 272px;
+            font-family: 'Mali', cursive;
+            color: #6e6e6e;
+            cursor: pointer;
+            
+        }
+        .para{
+          text-align: center;
+        }
+
+        .para span{
+          text-decoration: underline;
+          text-decoration-thickness:1.5px;
+
+        }
+
+        .tooltip{
+            position: absolute;
+            margin-top: 14px;
+            margin-left: 265px;
+            cursor: help;
+        }
+
+        .tooltiptext {
+              visibility: hidden;
+              width: 230px;
+              background-color: black;
+              color: #fff;
+              margin-top: -74px;
+              margin-bottom: 4px;
+              border-radius: 6px;
+              padding-left:25px ;
+
+              /* Position the tooltip */
+              position: absolute;
+              z-index: 1;
+            }
+            ul, li{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .tooltip:hover .tooltiptext {
+              visibility: visible;
+            }
+    
+
+         .subbox {
+            position: absolute; /*to hide the both content of log in & signup re tey overlap each-other*/
+            visibility: hidden;  /*Hide th content after page load */ 
+        }
+
+          #login {
+            visibility: visible;
+        }
+
+          h3 {
+            padding: 10px 15px;
+            font-size: 1.5em;
+            color: #555;
+        }
