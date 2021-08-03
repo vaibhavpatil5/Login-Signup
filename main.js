@@ -164,5 +164,23 @@
 
 
 //.......................................................................................................................................
+                  
+                       function bodyload(){
+            var now =new Date();
+            var hr = now.getHours(); //Start with 0-23
+            var salute = document.getElementById("salute");
+            var userName = prompt("Please Enter Your Good Name :)");
+            
+            
 
+            if(hr>=0 && hr<=12){
+                salute.innerHTML=`<i class='bx bx-sun'></i> Hello <b>${userName}</b> Good Morning...`;
+            }
+            else if(hr>=13 && hr<=17){
+                salute.innerHTML=`<i class="bi bi-cloud-sun"></i> Hello ${userName} Good Afternoon...`;
+            }
+            else if(hr>=18 && hr<=21){
+                salute.innerHTML=`<i class="bi bi-brightness-alt-high-fill"></i> Hello ${userName} Good Evening...`;
+            }
+        }
    
