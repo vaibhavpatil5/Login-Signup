@@ -51,7 +51,8 @@
 
 
                 if(email.length == 0){
-                    alert('Please Enter Email');               //Check Empty Box Email
+//                     alert('Please Enter Email');               //Check Empty Box Email
+                    swal("Opps..!","Please Enter Email","warning");
 
                 }
                  else if ((!email.match(regExp)))                //Check reg-exp with Email
