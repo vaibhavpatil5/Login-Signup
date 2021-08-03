@@ -57,7 +57,8 @@
                 }
                  else if ((!email.match(regExp)))                //Check reg-exp with Email
                 {
-                    alert('Invalid Email');
+//                     alert('Invalid Email');
+                   swal("Opps..!","Please Enter Valid Email","warning");
 
                 }
 
